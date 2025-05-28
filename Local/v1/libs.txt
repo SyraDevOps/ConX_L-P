@@ -1,2 +1,0 @@
-go mod init p2p
-go get github.com/libp2p/go-libp2p@v0.32.0
