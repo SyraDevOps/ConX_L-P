@@ -1,0 +1,33 @@
+# Initialize modules
+go mod init p2p
+
+# Core libp2p libraries
+go get github.com/libp2p/go-libp2p@v0.32.0
+go get github.com/libp2p/go-libp2p/core/host@v0.32.0
+go get github.com/libp2p/go-libp2p/core/network@v0.32.0
+go get github.com/libp2p/go-libp2p/core/peer@v0.32.0
+go get github.com/multiformats/go-multiaddr@v0.7.0
+
+# WebSocket support (needed for the relay functionality)
+go get github.com/gorilla/websocket@v1.5.1
+
+# Additional dependencies
+go get github.com/benbjohnson/clock@v1.3.5
+go get github.com/beorn7/perks@v1.0.1
+go get github.com/cespare/xxhash/v2@v2.2.0
+go get github.com/containerd/cgroups@v1.1.0
+go get github.com/coreos/go-systemd/v22@v22.5.0
+go get github.com/davidlazar/go-crypto@v0.0.0-20200604182044-b73af7476f6c
+go get github.com/decred/dcrd/dcrec/secp256k1/v4@v4.2.0
+go get github.com/docker/go-units@v0.5.0
+go get github.com/elastic/gosigar@v0.14.2
+go get github.com/flynn/noise@v1.0.0
+go get github.com/francoispqt/gojay@v1.2.13
+go get github.com/go-task/slim-sprig@v0.0.0-20230315185526-52ccab3ef572
+go get github.com/godbus/dbus/v5@v5.1.0
+go get github.com/gogo/protobuf@v1.3.2
+go get github.com/golang/protobuf@v1.5.3
+go get github.com/google/gopacket@v1.1.19
+
+# Update all dependencies
+go mod tidy
